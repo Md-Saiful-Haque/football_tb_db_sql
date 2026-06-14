@@ -74,4 +74,10 @@ INSERT INTO Matches (match_id, fixture, tournament_category, base_ticket_price, 
 (102, 'Man City vs Liverpool', 'Premier League', 120.00, 'Selling Fast'),
 (103, 'Bayern Munich vs PSG', 'Champions League', 130.00, 'Available'),
 (104, 'AC Milan vs Inter Milan', 'Serie A', 90.00, 'Sold Out'),
-(105, 'Juventus vs Roma', 'Serie A', 80.00, 'Available'); 
+(105, 'Juventus vs Roma', 'Serie A', 80.00, 'Available');
+
+
+-- Query 1: Retrieve all upcoming football matches belonging to the 'Champions League' where the match status is 'Available'.
+SELECT match_id, fixture, base_ticket_price FROM Matches 
+WHERE tournament_category = 'Champions League'
+  AND match_status = 'Available';
