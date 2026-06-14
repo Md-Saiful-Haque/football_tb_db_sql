@@ -101,3 +101,13 @@ WHERE payment_status IS NULL;
 SELECT booking_id, users.full_name, matches.fixture, total_cost FROM Bookings
   INNER JOIN matches ON bookings.match_id = matches.match_id
   INNER JOIN users ON bookings.user_id = users.user_id;
+
+
+-- Query 5: Display a comprehensive list of all users and their booking IDs, ensuring that fans who have never bought a ticket are still listed.
+
+SELECT 
+  users.user_id,
+  users.full_name,
+  bookings.booking_id
+FROM Users
+  LEFT JOIN bookings ON users.user_id = bookings.user_id;
