@@ -95,7 +95,7 @@ This project demonstrates the use of:
 
 ---
 
-## ER DIAGRAM IMAGE
+## ERD Diagram
 
 ![ER DIAGRAM](https://i.ibb.co.com/XZTFMLv3/Screenshot-2026-06-15-155302.png)
 
